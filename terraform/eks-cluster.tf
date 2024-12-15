@@ -1,6 +1,5 @@
 module "eks" {
-  source  = "terraform-aws-modules/eks/aws"
-  version = "19.19.1"
+  source = "git::https://github.com/terraform-aws-modules/terraform-aws-eks.git?ref=ed43ce7ec6004512ec22adfd3302a2cbdb3b6f23"
 
   cluster_name    = local.cluster_name
   cluster_version = "1.27"
@@ -11,7 +10,6 @@ module "eks" {
 
   eks_managed_node_group_defaults = {
     ami_type = "AL2_x86_64"
-
   }
 
   eks_managed_node_groups = {
