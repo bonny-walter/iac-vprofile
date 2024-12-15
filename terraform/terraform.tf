@@ -1,6 +1,6 @@
 terraform {
   # Specify required Terraform version
-  required_version = ">= 1.9.8, < 2.0.0"
+  required_version = "1.9.8"
 
   # Declare required providers with flexible version constraints
   required_providers {
