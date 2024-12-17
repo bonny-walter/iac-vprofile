@@ -81,8 +81,9 @@ jobs:
         if: steps.apple.outcome == 'succes' && steps.getconfig.outcome == 'success'
         run: kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.0/deploy/static/provider/cloud/deploy.yaml
 
-      - name: terraform destroy 
-        id: destroy
-        run: terraform destroy -auto-approve
+#      - name: terraform destroy 
+  #       id: destroy
+   
+   #     run: terraform destroy -auto-approve
 
         
